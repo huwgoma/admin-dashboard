@@ -48,9 +48,7 @@ button {
     background-color: var(--white);
 
     grid-column: 2 / -1;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 20px 25px;
 
     display: flex;
     flex-direction: column;
@@ -65,6 +63,7 @@ button {
     column-gap: 50px;
 }
 
+/* Header Top */
 .header-top {
     padding-bottom: 5px;
     border-bottom: 2px solid var(--dark-grey)
@@ -107,22 +106,52 @@ button {
     font-weight: 600;
 }
 
-.header-top .header-profile-pic {
-    width: 50px;
-}
-
-.header-top .header-profile-pic .profile-pic {
+.profile-pic {
     border-radius: 50%;
     height: auto;
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
+
+    vertical-align: middle;
+}
+
+.header-top .profile-pic-container {
+    width: 40px;
 }
 
 /* Header Bottom */
+.header-bottom {
+    padding-top: 10px;
+}
+
 .header-bottom .header-left {
     display: flex;
+    align-items: center;
+    column-gap: 15px;
 }
+
+.header-bottom .profile-pic-container {
+    width: 60px;
+}
+
+.header-bottom .greeting-message {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.greeting-message p:last-child {
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
 
 
 /* || Sidebar */
