@@ -168,22 +168,20 @@ button {
 
 
 
-
-
-
-
 /* || Sidebar */
 .sidebar {
     background-color: var(--blue);
     color: var(--white);
 
-    grid-row: 1 / 4;
+    height: 100%;
+    width: clamp(185px, 20%, 250px);
 
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    
     padding: 10px;
+
+    position: fixed;
 }
 
 .sidebar-header, .sidebar-content a {
@@ -198,7 +196,7 @@ button {
 }
 
 .sidebar-header {
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 800;
 }
 
@@ -230,12 +228,12 @@ button {
 /* || Main Content */
 .main-content {
     background-color: var(--grey);
+    box-shadow: 0 4px 4px -4px var(--black) inset;
+
+    grid-column: 2 / -1;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    
-
-    box-shadow: 0 4px 4px -4px var(--black) inset;
 }
 
 /* Main Content - Projects Grid */
