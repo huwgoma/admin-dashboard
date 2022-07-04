@@ -23,6 +23,11 @@ a, a:visited {
     text-decoration: none;
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+}
+
 /* Content */
 .container {
     min-height: 100%;
@@ -32,17 +37,73 @@ a, a:visited {
     grid-template-rows: 1fr 5fr;
 }
 
-/* Header */
+
+
+
+
+/* || Header */
 .header {
     background-color: var(--white);
 
     grid-column: 2 / -1;
-
     padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    background-color: lightblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.header-left {
+    width: clamp(180px, 70%, 800px);
+    min-width: 180px;
+}
+
+.header-left, .header-right  {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    vertical-align: middle;
+}
+
+input[type='search'] {
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-color: var(--grey);
+    width: 100%;
+    
+}
+
+.header-profile-pic {
+    width: 50px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.header-username {
+
 }
 
 
-/* Sidebar */
+/* || Sidebar */
 .sidebar {
     background-color: var(--blue);
     color: var(--white);
@@ -92,13 +153,24 @@ a, a:visited {
 }
 
 
-/* Main Content */
+
+
+
+
+
+
+/* || Main Content */
 .main-content {
     background-color: var(--grey);
 }
 
 
-/* Footer */
+
+
+
+
+
+/* || Footer */
 .footer {
     background-color: rgb(18, 18, 18);
     color: white;
