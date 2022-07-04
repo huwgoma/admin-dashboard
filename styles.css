@@ -32,6 +32,7 @@ a, a:visited {
     grid-template-rows: 1fr 5fr;
 }
 
+
 /* Header */
 .header {
     background-color: var(--white);
@@ -86,7 +87,7 @@ a, a:visited {
     font-weight: 900;
 }
 
-.sidebar-content img {
+.sidebar img {
     filter: invert(83%) sepia(100%) saturate(27%) hue-rotate(10deg) brightness(112%) contrast(96%);
     place-self: center;
 }
