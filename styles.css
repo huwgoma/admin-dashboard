@@ -39,7 +39,7 @@ button {
     
     display: grid;
     grid-template-columns: clamp(185px, 20%, 250px) 4fr;
-    grid-template-rows: 1fr 5fr 0.3fr;
+    grid-template-rows: min(20%, 200px) 5fr 0.3fr;
 }
 
 
@@ -177,7 +177,7 @@ button {
     background-color: var(--blue);
     color: var(--white);
 
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
 
     display: flex;
     flex-direction: column;
@@ -330,6 +330,7 @@ button {
     padding: 30px 20px 20px 20px;
 }
 
+/* Announcements */
 .announcement {
     padding-bottom: 5px;
 }
@@ -348,11 +349,35 @@ button {
     -webkit-line-clamp: 3;
 }
 
+/* Trending */
+.trending-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.trending-user {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.trending-user .profile-pic-container {
+    width: 40px;
+}
+
+.trending-user-handle {
+    font-size: 0.9rem;
+}
+
+.trending-user-credit {
+    font-size: 0.8rem;
+}
+
 /* || Footer */
 .footer {
     background-color: rgb(18, 18, 18);
     color: white;
 
-    grid-column: 1 / -1;
-
+    grid-column: 2 / -1;
 }
