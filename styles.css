@@ -187,7 +187,6 @@ button {
     grid-template-columns: minmax(48px, 1fr) 3fr;
     column-gap: 0.1rem;
     align-items: center;
-
 }
 
 .sidebar-content a:hover {
@@ -195,7 +194,7 @@ button {
 }
 
 .sidebar-header {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 800;
 }
 
