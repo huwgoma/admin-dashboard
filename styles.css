@@ -33,11 +33,13 @@ button {
 
 /* Content */
 .container {
+    height: auto;
     min-height: 100%;
+    min-width: 800px;
     
     display: grid;
     grid-template-columns: clamp(185px, 20%, 250px) 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 5fr 0.3fr;
 }
 
 
@@ -263,12 +265,11 @@ button {
     display: grid;
     grid-template-rows: 3fr 1fr;
     row-gap: 10px;
-    align-items: center;
+    align-items: start;
 }
 
 .project-description {
     font-size: 0.9rem;
-    color: var(--black);
     overflow: hidden;
     text-overflow: ellipsis;
 
@@ -330,4 +331,5 @@ button {
     color: white;
 
     grid-column: 1 / -1;
+
 }
