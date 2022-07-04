@@ -56,13 +56,16 @@ button {
     flex-direction: column;
 }
 
-.header-top {
+.header-top, .header-bottom {
     width: min(100%, 1300px);
     
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 50px;
+}
+
+.header-top {
     padding-bottom: 5px;
     border-bottom: 2px solid var(--dark-grey)
 }
@@ -101,6 +104,7 @@ button {
 
 .header-top .header-right {
     column-gap: 20px;
+    font-weight: 600;
 }
 
 .header-top .header-profile-pic {
@@ -115,6 +119,10 @@ button {
     object-fit: cover;
 }
 
+/* Header Bottom */
+.header-bottom .header-left {
+    display: flex;
+}
 
 
 /* || Sidebar */
