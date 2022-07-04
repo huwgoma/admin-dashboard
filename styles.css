@@ -377,4 +377,15 @@ button {
     color: white;
 
     grid-column: 2 / -1;
+
+    display: grid;
+    place-items: center;
+}
+
+.footer a {
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: var(--dark-grey);
 }
