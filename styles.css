@@ -67,22 +67,22 @@ button {
     border-bottom: 2px solid var(--dark-grey)
 }
 
-.header-left {
+.header-top .header-left {
     width: clamp(180px, 70%, 800px);
     min-width: 180px;
     column-gap: 10px;
 }
 
-.header-left, .header-right  {
+.header-top :is(.header-left, .header-right) {
     display: flex;
     align-items: center;
 }
 
-.header-left img {
+.header-top .header-left img {
     vertical-align: middle;
 }
 
-.header-left input[type='search'] {
+.header-top .header-left input[type='search'] {
     -webkit-appearance: none;
     appearance: none;
 
@@ -93,21 +93,21 @@ button {
     border: 1px solid var(--black);
 }
 
-input[type='search']:focus {
+.header-top input[type='search']:focus {
     outline: none;
     background-color: var(--dark-grey);
     border: 1px solid var(--dark-blue);
-    box-shadow: 1px 1px 1px var(--black);
 }
 
-.header-right {
+.header-top .header-right {
     column-gap: 20px;
 }
-.header-profile-pic {
+
+.header-top .header-profile-pic {
     width: 50px;
 }
 
-.header-profile-pic .profile-pic {
+.header-top .header-profile-pic .profile-pic {
     border-radius: 50%;
     height: auto;
     width: 100%;
