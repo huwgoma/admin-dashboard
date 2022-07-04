@@ -142,7 +142,7 @@ button {
 }
 
 .greeting-message p:last-child {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
 .header-bottom .header-right {
