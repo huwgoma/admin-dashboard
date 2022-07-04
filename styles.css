@@ -227,13 +227,35 @@ button {
 /* || Main Content */
 .main-content {
     background-color: var(--grey);
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
+.projects-grid {
 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 50px;
+}
 
+.grid-title {
+    grid-column: 1 / -1;
+}
 
+.side-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
 
+.side-grid > div {
+    display: grid;
+    grid-template-rows: 50px;
+}
 
+.announcements-card, .trending-card {
+    border: 1px solid black;
+}
 
 /* || Footer */
 .footer {
